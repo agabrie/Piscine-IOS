@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     @IBAction func btnNeg(_ sender: UIButton) {
         setVal1()
         if(val1 != 0){
-            val1 = -1 * Int(val1!)
+            val1 = -1 &* Int(val1!)
             updatelbl(value: val1!)
         }
     }
@@ -93,13 +93,13 @@ class ViewController: UIViewController {
     func calc(){
         switch(operation){
             case "+":
-                val1 = val1! + val2!
+                val1 = val1! &+ val2!
                 break
             case "-":
-                val1 = val1! - val2!
+                val1 = val1! &- val2!
                 break
             case "x":
-                val1 = val1! * val2!
+                val1 = val1! &* val2!
                 break
             case "/":
                 if(val2 != 0){
