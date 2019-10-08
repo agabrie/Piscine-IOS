@@ -23,27 +23,26 @@ class ViewController: UIViewController {
             newval = false
         }
         lblOutput.text = lblOutput.text! + sender.currentTitle!
+        
+    }
+    @IBAction func printBtn(_ sender: UIButton) {
         print("\(sender.currentTitle!) Clicked")
     }
-    
-    @IBAction func btnAC(_ sender: Any) {
+    @IBAction func btnAC(_ sender: UIButton) {
         clearLabel()
         val1 = 0
         val2 = 0
         index = 1
         operation = ""
+        newval = false
     }
-    func clearLabel(){
-        lblOutput.text = ""
-    }
-    @IBAction func btnNeg(_ sender: Any) {
+    @IBAction func btnNeg(_ sender: UIButton) {
         setVal1()
         if(val1 != 0){
-            val1 = -1 * Int(val1!)
+            val1 = -1 &* Int(val1!)
             updatelbl(value: val1!)
         }
     }
-    
     @IBAction func operation(_ sender: UIButton) {
         if(index == 1){
             setVal1()
@@ -61,34 +60,46 @@ class ViewController: UIViewController {
             
         }
     }
-    func updatelbl(value:Int){
-        lblOutput.text = "\(value)"
-    }
-    
-    func setVal1() {
-        val1 = Int(lblOutput.text!)
-    }
-    func setVal2() {
-        val2 = Int(lblOutput.text!)
-    }
-    @IBAction func btnEqu(_ sender: Any) {
+    @IBAction func btnEqu(_ sender: UIButton) {
         if(index == 2){
             setVal2()
         }
         calc()
-        print("\(val1!)")
+    }
+    
+//    These are csutom functions used by buttons
+    func clearLabel(){
+        lblOutput.text = ""
+    }
+    func updatelbl(value:Int){
+        lblOutput.text = "\(value)"
+    }
+    func setVal1(){
+        if(lblOutput.text! == "")
+        {
+            val1 = 0
+        }else{
+            val1 = Int(lblOutput.text!)
+        }
+    }
+    func setVal2(){
+        if(lblOutput.text! == "")
+        {
+            val2 = 0
+        }else{
+            val2 = Int(lblOutput.text!)
+        }
     }
     func calc(){
-        print("val1 : \(val1!)\rval2 : \(val2!)\roperation : \(operation)\rindex : \(index!)")
         switch(operation){
             case "+":
-                val1 = val1! + val2!
+                val1 = val1! &+ val2!
                 break
             case "-":
-                val1 = val1! - val2!
+                val1 = val1! &- val2!
                 break
-            case "*":
-                val1 = val1! * val2!
+            case "x":
+                val1 = val1! &* val2!
                 break
             case "/":
                 if(val2 != 0){
@@ -109,7 +120,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 

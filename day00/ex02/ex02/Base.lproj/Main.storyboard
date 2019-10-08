@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ex02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ex03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,7 @@
                                                                 <state key="normal" title="1"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="SgK-8A-Vd8"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="tcF-Cf-zhq"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggV-we-cPN">
@@ -59,6 +60,7 @@
                                                                 <state key="normal" title="2"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="0MU-K1-3X4"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="axJ-kn-PEf"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2r-8q-O9S">
@@ -70,6 +72,7 @@
                                                                 <state key="normal" title="3"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="SOi-GY-NdX"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="wCE-dy-NX6"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -92,6 +95,7 @@
                                                                 <state key="normal" title="4"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="ajY-2c-fcY"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="mXf-3v-XOl"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQA-VQ-zcu">
@@ -103,6 +107,7 @@
                                                                 <state key="normal" title="5"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="f06-zY-BuZ"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="2HV-7N-Y8M"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQl-B0-Crb">
@@ -114,6 +119,7 @@
                                                                 <state key="normal" title="6"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="6pu-Qe-2nx"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="Pn1-gq-4ZJ"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -130,6 +136,7 @@
                                                                 <state key="normal" title="7"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="dEg-fD-LuA"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="13w-K0-jDi"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRk-Y8-dP5">
@@ -141,6 +148,7 @@
                                                                 <state key="normal" title="8"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="0N6-1v-5Xg"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="Zmj-HL-F6t"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X09-SS-2Ix">
@@ -152,6 +160,7 @@
                                                                 <state key="normal" title="9"/>
                                                                 <connections>
                                                                     <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="rZ8-fu-1ys"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="qrw-4v-58Z"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -162,6 +171,7 @@
                                                         <state key="normal" title="0"/>
                                                         <connections>
                                                             <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchDown" id="gxf-Az-OrT"/>
+                                                            <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="H3l-by-g4f"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -179,6 +189,7 @@
                                                                 <state key="normal" title="AC"/>
                                                                 <connections>
                                                                     <action selector="btnAC:" destination="BYZ-38-t0r" eventType="touchDown" id="95z-So-5gK"/>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="fMv-d9-wdr"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6f-Vq-ab2">
@@ -186,6 +197,9 @@
                                                                 <color key="backgroundColor" red="0.65855731865284972" green="0.42896054277630125" blue="0.19251956158984007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                                                 <state key="normal" title="NEG"/>
+                                                                <connections>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="tlI-2f-54d"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -197,12 +211,18 @@
                                                                 <color key="backgroundColor" red="0.65855731865284972" green="0.42896054277630125" blue="0.19251956158984007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                                                 <state key="normal" title="+"/>
+                                                                <connections>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="FRl-DH-Bkd"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eK-tL-wiR">
                                                                 <rect key="frame" x="46" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" red="0.65855731865284972" green="0.42896054277630125" blue="0.19251956158984007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
-                                                                <state key="normal" title="*"/>
+                                                                <state key="normal" title="x"/>
+                                                                <connections>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="voP-rO-1hf"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -210,16 +230,22 @@
                                                         <rect key="frame" x="0.0" y="122" width="76" height="30"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHW-GR-ZAw">
-                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" red="0.65855731865284972" green="0.42896054277630125" blue="0.19251956158984007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                                                 <state key="normal" title="-"/>
+                                                                <connections>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="9tO-AH-UfM"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bc-cF-KNY">
-                                                                <rect key="frame" x="46" y="0.0" width="30" height="30"/>
+                                                                <rect key="frame" x="45" y="0.0" width="31" height="30"/>
                                                                 <color key="backgroundColor" red="0.65855731865284972" green="0.42896054277630125" blue="0.19251956158984007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                                                 <state key="normal" title="/"/>
+                                                                <connections>
+                                                                    <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="g0k-8p-pkB"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -230,6 +256,7 @@
                                                         <state key="normal" title="="/>
                                                         <connections>
                                                             <action selector="btnEqu:" destination="BYZ-38-t0r" eventType="touchDown" id="QhW-XC-7Cp"/>
+                                                            <action selector="printBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="vq3-ww-8AR"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>

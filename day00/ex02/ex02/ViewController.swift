@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBAction func btnClicked(_ sender: UIButton) {
         lblOutput.text = lblOutput.text! + sender.currentTitle!
         val = Int(lblOutput.text!)
-        print("\(sender.currentTitle!) Clicked")
     }
     
     @IBAction func btnAC(_ sender: Any) {
@@ -30,7 +29,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func printBtn(_ sender: UIButton) {
+        print("\(sender.currentTitle!) Clicked")
+    }
+    
+    
 }
 
