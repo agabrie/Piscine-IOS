@@ -1,16 +1,32 @@
 enum Value:Int{
-    case ACE = 1
-    case TWO = 2
-    case THREE = 3
-    case FOUR = 4
-    case FIVE = 5
-    case SIX = 6
-    case SEVEN = 7
-    case EIGHT = 8
-    case NINE = 9
-    case TEN = 10
-    case JACK = 11
-    case QUEEN = 12
-    case KING = 13
-    static let allValues:[Value] = [.ACE, .TWO, .THREE, .FOUR, .FIVE, .SIX, .SEVEN, .EIGHT, .NINE, .TEN, .JACK, .QUEEN, .KING]
+	case Ace	= 1
+	case Two	= 2
+	case Three	= 3
+	case Four	= 4
+	case Five	= 5
+	case Six	= 6
+	case Seven	= 7
+	case Eight	= 8
+	case Nine	= 9
+	case Ten	= 10
+	case Jack	= 11
+	case Queen	= 12
+	case King	= 13
+}
+extension Value{
+	static let allValues:[Value] = [
+		.Ace	,
+		.Two	,
+		.Three	,
+		.Four	,
+		.Five	,
+		.Six	,
+		.Seven	,
+		.Eight	,
+		.Nine	,
+		.Ten	,
+		.Jack	,
+		.Queen	,
+		.King
+	]
 }

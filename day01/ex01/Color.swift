@@ -1,8 +1,15 @@
 enum Color:String{
-    case HEARTS = "RED"
-    case SPADES = "BLACK"
-    case CLUBS = "GREEN"
-    case DIAMONDS = "BLUE"
-    static let allColors:[Color] = [.HEARTS, .SPADES, .CLUBS, .DIAMONDS]
+	case Heart		= "Heart"
+	case Spade		= "Spade"
+	case Club		= "Club"
+	case Diamond	= "Diamond"
+}
+extension Color {
+	static let allColors:[Color] = [
+		.Heart	,
+		.Spade	,
+		.Club	,
+		.Diamond
+	]
 }
 
