@@ -35,7 +35,7 @@
 
 
 var cardDeck:[Card] = Deck.allCards
-var theDeck = Deck(false)
+var theDeck = Deck(true)
 
 print("\nOriginal : ")
 print("cards : ")
