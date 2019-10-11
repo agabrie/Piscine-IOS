@@ -15,7 +15,7 @@ class Deck:NSObject{
         cards = Deck.allCards
         if(!sorted){
             cards.shuffle()
-            }
+        }
     }
 
 }
