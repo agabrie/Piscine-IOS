@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SLo-Fe-OgE">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="sfS-ie-sLm">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UVR-NL-vKN" customClass="MapViewController" customModule="Kanto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fzq-j5-Gcx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWf-4V-nJy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UVR-NL-vKN" id="tnV-AZ-Zrh"/>
+                                </connections>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1rT-mc-lq8">
+                                <rect key="frame" x="74" y="559" width="227" height="32"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="UVR-NL-vKN" eventType="valueChanged" id="Ok8-DB-6qN"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-HB-eba">
+                                <rect key="frame" x="309" y="563" width="24" height="23"/>
+                                <state key="normal" image="scope" catalog="system"/>
+                                <connections>
+                                    <action selector="getLocation:" destination="UVR-NL-vKN" eventType="touchUpInside" id="264-95-x5o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UEL-Fi-e9D" firstAttribute="trailing" secondItem="JWf-4V-nJy" secondAttribute="trailing" id="6Qn-zR-1Kw"/>
+                            <constraint firstItem="UEL-Fi-e9D" firstAttribute="bottom" secondItem="JWf-4V-nJy" secondAttribute="bottom" id="8T4-t1-NDV"/>
+                            <constraint firstItem="1rT-mc-lq8" firstAttribute="top" secondItem="UEL-Fi-e9D" secondAttribute="top" constant="559" id="921-Ih-V5p"/>
+                            <constraint firstItem="JWf-4V-nJy" firstAttribute="leading" secondItem="UEL-Fi-e9D" secondAttribute="leading" id="H1O-NM-mbh"/>
+                            <constraint firstItem="1rT-mc-lq8" firstAttribute="centerX" secondItem="JWf-4V-nJy" secondAttribute="centerX" id="NW6-9I-bO7"/>
+                            <constraint firstItem="1rT-mc-lq8" firstAttribute="centerY" secondItem="gkm-HB-eba" secondAttribute="centerY" id="XIL-Y6-9Ah"/>
+                            <constraint firstItem="JWf-4V-nJy" firstAttribute="top" secondItem="UEL-Fi-e9D" secondAttribute="top" id="ftE-5n-AiQ"/>
+                            <constraint firstItem="gkm-HB-eba" firstAttribute="leading" secondItem="1rT-mc-lq8" secondAttribute="trailing" constant="8" id="gVT-ey-wAO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UEL-Fi-e9D"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="mappin.circle.fill" catalog="system" id="nvo-rz-NMQ"/>
+                    <navigationItem key="navigationItem" id="4ub-zX-zOh"/>
+                    <connections>
+                        <outlet property="mapTypeSelect" destination="1rT-mc-lq8" id="Ts2-Qd-SM3"/>
+                        <outlet property="mapView" destination="JWf-4V-nJy" id="PXH-NQ-e9Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBz-XF-t0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="260"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="t5V-6o-BZI">
+            <objects>
+                <viewController id="YRP-a6-Sl0" customClass="LocationViewController" customModule="Kanto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jNz-TB-O8g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8bd-1M-Vx2" customClass="LocationListController" customModule="Kanto" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvcPlace" rowHeight="77" id="91T-lT-C1w" customClass="tvcPlace" customModule="Kanto" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="91T-lT-C1w" id="ejd-MN-YoT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d1-yd-Pow">
+                                                    <rect key="frame" x="12" y="0.0" width="351" height="77"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0d1-yd-Pow" firstAttribute="top" secondItem="ejd-MN-YoT" secondAttribute="top" id="6en-44-ZBZ"/>
+                                                <constraint firstItem="0d1-yd-Pow" firstAttribute="leading" secondItem="ejd-MN-YoT" secondAttribute="leading" constant="12" id="6uA-kg-D2J"/>
+                                                <constraint firstAttribute="bottom" secondItem="0d1-yd-Pow" secondAttribute="bottom" id="PfR-5I-zSp"/>
+                                                <constraint firstAttribute="trailing" secondItem="0d1-yd-Pow" secondAttribute="trailing" constant="12" id="fik-lP-amD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblPlaceName" destination="0d1-yd-Pow" id="vQD-3m-a4y"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YRP-a6-Sl0" id="rZZ-fL-4gX"/>
+                                    <outlet property="delegate" destination="YRP-a6-Sl0" id="oEv-wr-Syv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8bd-1M-Vx2" firstAttribute="leading" secondItem="89J-bF-GsF" secondAttribute="leading" id="8S0-Gt-l2P"/>
+                            <constraint firstItem="89J-bF-GsF" firstAttribute="trailing" secondItem="8bd-1M-Vx2" secondAttribute="trailing" id="HGD-Ft-Udv"/>
+                            <constraint firstItem="8bd-1M-Vx2" firstAttribute="top" secondItem="89J-bF-GsF" secondAttribute="top" id="ojI-JL-abW"/>
+                            <constraint firstItem="89J-bF-GsF" firstAttribute="bottom" secondItem="8bd-1M-Vx2" secondAttribute="bottom" id="ttC-PK-ohT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="89J-bF-GsF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="list.dash" catalog="system" id="7zL-p0-9pJ"/>
+                    <connections>
+                        <outlet property="locationView" destination="8bd-1M-Vx2" id="XRV-4z-Pwm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27l-8B-5xZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-454" y="260"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HP1-y9-9E0">
+            <objects>
+                <tabBarController id="SLo-Fe-OgE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OP1-lm-M4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YRP-a6-Sl0" kind="relationship" relationship="viewControllers" id="nUS-SX-HSU"/>
+                        <segue destination="UVR-NL-vKN" kind="relationship" relationship="viewControllers" id="bOC-Yx-pb3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yts-nP-0oH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89" y="-546"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.dash" catalog="system" width="64" height="42"/>
+        <image name="mappin.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="scope" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

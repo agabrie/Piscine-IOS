@@ -7,29 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4031B80923509C7500A63CCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031B80823509C7500A63CCE /* AppDelegate.swift */; };
-		4031B80B23509C7500A63CCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031B80A23509C7500A63CCE /* SceneDelegate.swift */; };
-		4031B81023509C7500A63CCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4031B80E23509C7500A63CCE /* Main.storyboard */; };
-		4031B81223509C8100A63CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4031B81123509C8100A63CCE /* Assets.xcassets */; };
-		4031B81523509C8100A63CCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4031B81323509C8100A63CCE /* LaunchScreen.storyboard */; };
-		4031B81F2350B5E800A63CCE /* ImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031B81E2350B5E800A63CCE /* ImageCollection.swift */; };
-		4031B8212350D51700A63CCE /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031B8202350D51700A63CCE /* ImageViewCell.swift */; };
+		40D18F352355DC3700CC6D9B /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D18F342355DC3700CC6D9B /* Pin.swift */; };
+		40F66C92235475F1009A3799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66C91235475F1009A3799 /* AppDelegate.swift */; };
+		40F66C94235475F1009A3799 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66C93235475F1009A3799 /* SceneDelegate.swift */; };
+		40F66C99235475F1009A3799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F66C97235475F1009A3799 /* Main.storyboard */; };
+		40F66C9B23547601009A3799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F66C9A23547601009A3799 /* Assets.xcassets */; };
+		40F66C9E23547601009A3799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F66C9C23547601009A3799 /* LaunchScreen.storyboard */; };
+		40F66CA623547BC2009A3799 /* tvcPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66CA523547BC2009A3799 /* tvcPlace.swift */; };
+		40F66CB1235491D0009A3799 /* LocationListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66CB0235491D0009A3799 /* LocationListController.swift */; };
+		40F66CB323549D59009A3799 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66CB223549D59009A3799 /* Location.swift */; };
+		40F66CB52354A1EB009A3799 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66CB42354A1EB009A3799 /* LocationViewController.swift */; };
+		40F66CB72354B3FE009A3799 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F66CB62354B3FE009A3799 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4031B80523509C7500A63CCE /* ImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4031B80823509C7500A63CCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4031B80A23509C7500A63CCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4031B80F23509C7500A63CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4031B81123509C8100A63CCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4031B81423509C8100A63CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4031B81623509C8100A63CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4031B81E2350B5E800A63CCE /* ImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollection.swift; sourceTree = "<group>"; };
-		4031B8202350D51700A63CCE /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		40D18F342355DC3700CC6D9B /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		40F66C8E235475F1009A3799 /* Kanto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F66C91235475F1009A3799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40F66C93235475F1009A3799 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		40F66C98235475F1009A3799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40F66C9A23547601009A3799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40F66C9D23547601009A3799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40F66C9F23547601009A3799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40F66CA523547BC2009A3799 /* tvcPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvcPlace.swift; sourceTree = "<group>"; };
+		40F66CB0235491D0009A3799 /* LocationListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListController.swift; sourceTree = "<group>"; };
+		40F66CB223549D59009A3799 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		40F66CB42354A1EB009A3799 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		40F66CB62354B3FE009A3799 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4031B80223509C7500A63CCE /* Frameworks */ = {
+		40F66C8B235475F1009A3799 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +47,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4031B7FC23509C7500A63CCE = {
+		40F66C85235475F1009A3799 = {
 			isa = PBXGroup;
 			children = (
-				4031B80723509C7500A63CCE /* ImageDownloader */,
-				4031B80623509C7500A63CCE /* Products */,
+				40F66C90235475F1009A3799 /* Kanto */,
+				40F66C8F235475F1009A3799 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4031B80623509C7500A63CCE /* Products */ = {
+		40F66C8F235475F1009A3799 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4031B80523509C7500A63CCE /* ImageDownloader.app */,
+				40F66C8E235475F1009A3799 /* Kanto.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4031B80723509C7500A63CCE /* ImageDownloader */ = {
+		40F66C90235475F1009A3799 /* Kanto */ = {
 			isa = PBXGroup;
 			children = (
-				4031B80823509C7500A63CCE /* AppDelegate.swift */,
-				4031B81E2350B5E800A63CCE /* ImageCollection.swift */,
-				4031B8202350D51700A63CCE /* ImageViewCell.swift */,
-				4031B80A23509C7500A63CCE /* SceneDelegate.swift */,
-				4031B80E23509C7500A63CCE /* Main.storyboard */,
-				4031B81123509C8100A63CCE /* Assets.xcassets */,
-				4031B81323509C8100A63CCE /* LaunchScreen.storyboard */,
-				4031B81623509C8100A63CCE /* Info.plist */,
+				40F66C91235475F1009A3799 /* AppDelegate.swift */,
+				40F66C93235475F1009A3799 /* SceneDelegate.swift */,
+				40F66CA523547BC2009A3799 /* tvcPlace.swift */,
+				40F66CB0235491D0009A3799 /* LocationListController.swift */,
+				40F66CB62354B3FE009A3799 /* MapViewController.swift */,
+				40D18F342355DC3700CC6D9B /* Pin.swift */,
+				40F66CB223549D59009A3799 /* Location.swift */,
+				40F66CB42354A1EB009A3799 /* LocationViewController.swift */,
+				40F66C97235475F1009A3799 /* Main.storyboard */,
+				40F66C9A23547601009A3799 /* Assets.xcassets */,
+				40F66C9C23547601009A3799 /* LaunchScreen.storyboard */,
+				40F66C9F23547601009A3799 /* Info.plist */,
 			);
-			path = ImageDownloader;
+			path = Kanto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4031B80423509C7500A63CCE /* ImageDownloader */ = {
+		40F66C8D235475F1009A3799 /* Kanto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4031B81923509C8100A63CCE /* Build configuration list for PBXNativeTarget "ImageDownloader" */;
+			buildConfigurationList = 40F66CA223547601009A3799 /* Build configuration list for PBXNativeTarget "Kanto" */;
 			buildPhases = (
-				4031B80123509C7500A63CCE /* Sources */,
-				4031B80223509C7500A63CCE /* Frameworks */,
-				4031B80323509C7500A63CCE /* Resources */,
+				40F66C8A235475F1009A3799 /* Sources */,
+				40F66C8B235475F1009A3799 /* Frameworks */,
+				40F66C8C235475F1009A3799 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ImageDownloader;
-			productName = ImageDownloader;
-			productReference = 4031B80523509C7500A63CCE /* ImageDownloader.app */;
+			name = Kanto;
+			productName = Kanto;
+			productReference = 40F66C8E235475F1009A3799 /* Kanto.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4031B7FD23509C7500A63CCE /* Project object */ = {
+		40F66C86235475F1009A3799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "abduraghmaan GABRIELS";
 				TargetAttributes = {
-					4031B80423509C7500A63CCE = {
+					40F66C8D235475F1009A3799 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
 			};
-			buildConfigurationList = 4031B80023509C7500A63CCE /* Build configuration list for PBXProject "ImageDownloader" */;
+			buildConfigurationList = 40F66C89235475F1009A3799 /* Build configuration list for PBXProject "Kanto" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +125,60 @@
 				en,
 				Base,
 			);
-			mainGroup = 4031B7FC23509C7500A63CCE;
-			productRefGroup = 4031B80623509C7500A63CCE /* Products */;
+			mainGroup = 40F66C85235475F1009A3799;
+			productRefGroup = 40F66C8F235475F1009A3799 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4031B80423509C7500A63CCE /* ImageDownloader */,
+				40F66C8D235475F1009A3799 /* Kanto */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4031B80323509C7500A63CCE /* Resources */ = {
+		40F66C8C235475F1009A3799 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4031B81523509C8100A63CCE /* LaunchScreen.storyboard in Resources */,
-				4031B81223509C8100A63CCE /* Assets.xcassets in Resources */,
-				4031B81023509C7500A63CCE /* Main.storyboard in Resources */,
+				40F66C9E23547601009A3799 /* LaunchScreen.storyboard in Resources */,
+				40F66C9B23547601009A3799 /* Assets.xcassets in Resources */,
+				40F66C99235475F1009A3799 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4031B80123509C7500A63CCE /* Sources */ = {
+		40F66C8A235475F1009A3799 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4031B8212350D51700A63CCE /* ImageViewCell.swift in Sources */,
-				4031B80923509C7500A63CCE /* AppDelegate.swift in Sources */,
-				4031B81F2350B5E800A63CCE /* ImageCollection.swift in Sources */,
-				4031B80B23509C7500A63CCE /* SceneDelegate.swift in Sources */,
+				40F66CB1235491D0009A3799 /* LocationListController.swift in Sources */,
+				40F66C92235475F1009A3799 /* AppDelegate.swift in Sources */,
+				40F66CB323549D59009A3799 /* Location.swift in Sources */,
+				40D18F352355DC3700CC6D9B /* Pin.swift in Sources */,
+				40F66CB52354A1EB009A3799 /* LocationViewController.swift in Sources */,
+				40F66CA623547BC2009A3799 /* tvcPlace.swift in Sources */,
+				40F66C94235475F1009A3799 /* SceneDelegate.swift in Sources */,
+				40F66CB72354B3FE009A3799 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4031B80E23509C7500A63CCE /* Main.storyboard */ = {
+		40F66C97235475F1009A3799 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4031B80F23509C7500A63CCE /* Base */,
+				40F66C98235475F1009A3799 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4031B81323509C8100A63CCE /* LaunchScreen.storyboard */ = {
+		40F66C9C23547601009A3799 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4031B81423509C8100A63CCE /* Base */,
+				40F66C9D23547601009A3799 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +186,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4031B81723509C8100A63CCE /* Debug */ = {
+		40F66CA023547601009A3799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		4031B81823509C8100A63CCE /* Release */ = {
+		40F66CA123547601009A3799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,34 +300,34 @@
 			};
 			name = Release;
 		};
-		4031B81A23509C8100A63CCE /* Debug */ = {
+		40F66CA323547601009A3799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				INFOPLIST_FILE = Kanto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wethinkcode.agabrie.ImageDownloader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wethinkcode.agabrie.Kanto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4031B81B23509C8100A63CCE /* Release */ = {
+		40F66CA423547601009A3799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				INFOPLIST_FILE = Kanto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wethinkcode.agabrie.ImageDownloader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wethinkcode.agabrie.Kanto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,25 +337,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4031B80023509C7500A63CCE /* Build configuration list for PBXProject "ImageDownloader" */ = {
+		40F66C89235475F1009A3799 /* Build configuration list for PBXProject "Kanto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4031B81723509C8100A63CCE /* Debug */,
-				4031B81823509C8100A63CCE /* Release */,
+				40F66CA023547601009A3799 /* Debug */,
+				40F66CA123547601009A3799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4031B81923509C8100A63CCE /* Build configuration list for PBXNativeTarget "ImageDownloader" */ = {
+		40F66CA223547601009A3799 /* Build configuration list for PBXNativeTarget "Kanto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4031B81A23509C8100A63CCE /* Debug */,
-				4031B81B23509C8100A63CCE /* Release */,
+				40F66CA323547601009A3799 /* Debug */,
+				40F66CA423547601009A3799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4031B7FD23509C7500A63CCE /* Project object */;
+	rootObject = 40F66C86235475F1009A3799 /* Project object */;
 }
